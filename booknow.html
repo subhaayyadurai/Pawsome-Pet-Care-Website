@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Now | Pawsome</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+<a class="logo" href="index.html">Paw<span>some.</span> 🐾</a>
+<a href="index.html">← Home</a>
+</nav>
+
+<section class="section container">
+<div class="center">
+<span class="eyebrow">Let's plan something pawsome</span>
+<h1 class="section-title">Book a service</h1>
+<p class="section-sub">Tell us a little about you and your furry friend.</p>
+</div>
+
+<div class="booking-box">
+<form id="bookingForm">
+
+<div class="grid-2">
+<div class="form-group">
+<label>Your name</label>
+<input type="text" placeholder="Full name" required>
+</div>
+
+<div class="form-group">
+<label>Email</label>
+<input type="email" placeholder="Email address" required>
+</div>
+</div>
+
+<div class="grid-2">
+<div class="form-group">
+<label>Pet's name</label>
+<input type="text" placeholder="Your pet's name" required>
+</div>
+
+<div class="form-group">
+<label>Pet type</label>
+<select required>
+<option value="">Select pet</option>
+<option>Dog</option>
+<option>Cat</option>
+<option>Other</option>
+</select>
+</div>
+</div>
+
+<div class="form-group">
+<label>Service</label>
+<select required>
+<option value="">Choose a service</option>
+<option>Grooming</option>
+<option>Walking</option>
+<option>Pet Sitting</option>
+</select>
+</div>
+
+<div class="grid-2">
+<div class="form-group">
+<label>Preferred date</label>
+<input type="date" required>
+</div>
+
+<div class="form-group">
+<label>Preferred time</label>
+<input type="time" required>
+</div>
+</div>
+
+<div class="form-group">
+<label>Additional details</label>
+<textarea rows="4" placeholder="Tell us about your pet or special requirements"></textarea>
+</div>
+
+<button type="submit" class="btn btn-green full-btn">Submit booking request 🐾</button>
+
+<div id="bookingMessage" class="message"></div>
+
+</form>
+</div>
+</section>
+
+<footer class="footer">
+<div class="footer-bottom">© <span class="year"></span> Pawsome</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
